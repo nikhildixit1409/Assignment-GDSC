@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           height: 100%;
+           width: 100%;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            border: 2px solid black;
+            padding: 4rem;
+            row-gap: 0.4rem;
+            column-gap: 0.3rem;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            background-color: black;
+        }
+        #item1{
+            background-color: rgb(199, 36, 72);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        #item2{
+            background-color:bisque;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-style:italic;
+            font-size:xx-large; 
+            font-family: 'Brush Script MT', cursive;
+            
+        
+        }
+        #item3{
+            background-color:rgb(172, 117, 224); 
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; 
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center; 
+        }
+        #item4{
+            background-color:rgb(36, 36, 36);
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-style:italic;
+            font-size:xx-large;
+            font-family: "Brush Script MT", cursive;
+            color: white;
+
+        }
+    
+        #item5{
+            background-color:rgb(152, 220, 110); 
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-style:italic;
+            font-size:60px;
+            font-family: "Brush Script MT", cursive;
+            color:black;
+            font-weight: 800;
+
+        }
+        #item6{
+             background-color: bisque;
+             grid-column-start: 3;
+             grid-column-end: 4;
+             grid-row-start: 3;
+             grid-row-end: 4;
+             display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-size:29px;
+            font-family:cursive;
+            color:black;
+            font-weight:900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">
+            <div>
+                <img src="https://i.pinimg.com/736x/68/8c/ad/688cade509c49c64de640ab44387d613.jpg" alt="click here" width="43px" height="43px">
+            </div>
+        </div>
+        <div class="item" id="item2">12833</div>
+        <div class="item" id="item3">
+            <div>
+                <img src="https://img.freepik.com/premium-vector/show-password-icon-eye-symbol-vector-vision-hide-from-watch-icon-secret-view-web-design-element_87543-11126.jpg" alt="click here" width="43px" height="43px">
+            </div>
+        </div>
+        <div class="item" id="item4">Nikhil dixit</div>
+        <div class="item" id="item5">Works</div>
+        <div class="item" id="item6">Fear & Failures</div>
+    </div>
+</body>
+</html>
